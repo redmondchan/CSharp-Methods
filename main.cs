@@ -11,12 +11,20 @@ class MainClass {
     return result;
   }
 
+  static int Diff(int x, int y = 2){
+    int result = x - y;
+    return result;
+  }
+
   public static void Main (string[] args) {
     Console.WriteLine ("Method");
 
   SayHi();
 
   Console.WriteLine(Sum(3));
+
+  Console.WriteLine(Diff(4, 1));
+  Console.WriteLine(Diff(4));
 
   }
 }
