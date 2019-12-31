@@ -16,6 +16,11 @@ class MainClass {
     return result;
   }
 
+  static string NameAge(string name, int age){
+    string result = $"{name} is {age} years old.";
+    return result;
+  }
+
   public static void Main (string[] args) {
     Console.WriteLine ("Method");
 
@@ -25,6 +30,8 @@ class MainClass {
 
   Console.WriteLine(Diff(4, 1));
   Console.WriteLine(Diff(4));
+
+  Console.WriteLine(NameAge("Bob", 5));
 
   }
 }
